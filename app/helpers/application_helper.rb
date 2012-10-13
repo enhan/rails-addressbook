@@ -9,5 +9,15 @@ module ApplicationHelper
 			"#{base_title} | #{page_title}"
 		end
 	end
-		
+	
+	
+	def active_style_nav(tab_type, page_type)
+		style = "active"
+		if tab_type == page_type
+			style
+		else
+			""
+		end
+	end
+	
 end
