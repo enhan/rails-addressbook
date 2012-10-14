@@ -4,6 +4,7 @@
   <a class="brand" href="/">Raddresses</a>
     <ul class="nav">
       <li class="<%= active_style_nav('home', yield(:page_type))%>"><%= link_to "Home", root_path %></li>
+	  <li class="<%= active_style_nav('contact', yield(:page_type))%>"><%= link_to "Addresses", contacts_path%></li>
       <li class="<%= active_style_nav('about', yield(:page_type))%>"><%= link_to "About", about_path%></li>
     </ul>
     
