@@ -1,0 +1,16 @@
+<% provide(:title, 'Address book') %>
+<%= provide(:page_type, "contact") %>
+
+<h1>Addresses</h1>
+<table class="table">
+	<thead>
+		<tr><th>Name</th><th>Email</th></tr>
+	</thead>
+	<tbody>
+		<% @contacts.each do |user| %>
+			<tr>
+				<td><%= user.name %></td><td><%= user.email %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
